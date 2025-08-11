@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Garima ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffefff;
+            min-height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .page {
+            display: none;
+            min-height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeIn 1s ease;
+            padding: 18px;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1,
+        h2 {
+            color: #e03d6b;
+            text-shadow: 0 2px 8px #fff5fa;
+            margin-bottom: 12px;
+            margin-top: 0;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            color: #9c2652;
+            font-size: 1.04rem;
+            margin: 8px 0;
+            text-shadow: 0 1px 4px #fff3f6;
+        }
+
+        button {
+            background: linear-gradient(120deg, #ff85a2, #ff4d88);
+            border: none;
+            color: #fff;
+            font-size: 1.06rem;
+            border-radius: 50px;
+            padding: 12px 28px;
+            cursor: pointer;
+            margin-top: 26px;
+            box-shadow: 0 6px 16px #ff85a242;
+            transition: transform 0.15s;
+        }
+
+        button:hover {
+            transform: scale(1.07);
+        }
+
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -45px;
+            border-radius: 50%;
+            animation: rise 11s infinite linear;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                transform: translateY(-110vh) scale(1.28);
+            }
+        }
+
+        .final {
+            background: url('https://wallpapercave.com/wp/wp9112709.jpg') center/cover no-repeat;
+            color: #fff;
+            text-shadow: 0 0 10px #8c2868;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .message {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.17);
+            padding: 18px;
+            border-radius: 13px;
+            font-size: 1.07rem;
+            margin: 16px auto;
+            backdrop-filter: blur(5px);
+            color: #b7396b;
+            line-height: 1.6;
+            box-shadow: 0 0 24px #fff3;
+        }
+
+        .glow {
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 8px #fff, 0 0 19px #ff4d88;
+            }
+
+            100% {
+                text-shadow: 0 0 18px #fff, 0 0 30px #ff1a66;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.25rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .message {
+                font-size: 0.97rem;
+                padding: 12px;
+            }
+
+            button {
+                font-size: 0.97rem;
+                padding: 10px 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgmusic" preload="auto" loop>
+        <source src="dhundhla.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Start Page -->
+    <div class="page start" style="display:flex;">
+        <h1 class="glow">💖 For My Best Friend Garima 💖</h1>
+        <p>There’s something special I made just for you.</p>
+        <button onclick="next('welcome')">Start</button>
+        <div class="bg" id="bg1"></div>
+    </div>
+
+    <!-- Welcome Page -->
+    <div class="page welcome">
+        <h2>Welcome, Garima 🌸</h2>
+        <p>Since the day we met, you’ve been the brightest part of my life.</p>
+        <p>You’re truly the best, and I’m lucky to have you.</p>
+        <button onclick="next('final')">Next</button>
+        <div class="bg" id="bg2"></div>
+    </div>
+
+    <!-- Final Page -->
+    <div class="page final">
+        <h1>💫 For My Best Friend Garima 💫</h1>
+
+        <!-- Image -->
+        <img src="garima.jpg" alt="Garima"
+            style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 0 20px rgba(255,255,255,0.3); margin-bottom: 20px;">
+
+        <!-- Message at the bottom -->
+        <div class="message" style="margin-top: auto;">
+            Garima, you are one of the most beautiful souls I’ve ever met — kind, caring, funny, and full of life.
+            Thank you for being you, for all the wonderful memories we’ve shared, and for standing by me through thick
+            and thin.
+            Your friendship means the world to me, and I’m truly grateful every day for the laughter, support, and
+            kindness you bring into my life.
+            I cherish the bond we have, and I look forward to many more beautiful moments together.
+            I’ll always be grateful for the day we met. ❤️<span style="font-size:1.2em;">❤️</span>
+            <br>
+            You inspire me to be a better person, and your positivity lifts me up even on the toughest days.
+            I admire your strength, your compassion, and your ability to make everyone around you feel special.
+            No matter where life takes us, I know our friendship will always remain strong.
+            Thank you for being my confidant, my cheerleader, and my partner in all the crazy adventures.
+            Here’s to endless laughter, heartfelt conversations, and memories that last a lifetime.
+            You truly are irreplaceable, Garima. 💖
+        </div>
+    </div>
+
+
+    <script>
+        let played = false;
+
+        // Show page
+        function showPage(pageName) {
+            document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+            document.querySelector('.' + pageName).style.display = 'flex';
+        }
+
+        // Play music from 0:18
+        function playMusic() {
+            if (!played) {
+                const audio = document.getElementById('bgmusic');
+                audio.currentTime = 19; // skip to 0:18
+                audio.volume = 0.6;
+                audio.play().catch(err => console.log("Autoplay blocked:", err));
+                played = true;
+            }
+        }
+
+        // Next page handler
+        function next(pageName) {
+            showPage(pageName);
+            playMusic();
+        }
+
+        // Bubble background
+        function createBubbles(containerId) {
+            const container = document.getElementById(containerId);
+            for (let i = 0; i < 16; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                let size = Math.random() * 32 + 25;
+                bubble.style.width = size + 'px';
+                bubble.style.height = size + 'px';
+                bubble.style.left = Math.random() * 98 + '%';
+                bubble.style.animationDuration = (Math.random() * 4 + 7) + 's';
+                bubble.style.background = `rgba(255,${170 + Math.floor(Math.random() * 40)},${180 + Math.floor(Math.random() * 50)},0.55)`;
+                container.appendChild(bubble);
+            }
+        }
+        createBubbles('bg1');
+        createBubbles('bg2');
+    </script>
+</body>
+
+</html>
